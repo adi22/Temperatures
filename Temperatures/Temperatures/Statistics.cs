@@ -29,11 +29,11 @@
         }
         public float TemperatureInFahrenheit(float temperature) 
         {
-            return (float)Math.Round(((temperature - 32f) * (5f / 9f)), 2);
+            return (float)Math.Round((temperature * (9f / 5f) + 32f), 2);
         }
         public float TemperatureInKelvin(float temperature) 
         {
-            return (temperature + 273.15f);
+            return (float)Math.Round((temperature + 273.15f), 2);
         }
 
 

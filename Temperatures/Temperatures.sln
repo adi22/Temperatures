@@ -5,6 +5,8 @@ VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Temperatures", "Temperatures\Temperatures.csproj", "{16107B02-76AA-48F7-B1F4-E98D0C33CBD9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Temperatures.Tests", "Temperatures.Tests\Temperatures.Tests.csproj", "{8216B9E8-F14D-4C66-9798-7FA9BFD92EEF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{16107B02-76AA-48F7-B1F4-E98D0C33CBD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{16107B02-76AA-48F7-B1F4-E98D0C33CBD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{16107B02-76AA-48F7-B1F4-E98D0C33CBD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8216B9E8-F14D-4C66-9798-7FA9BFD92EEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8216B9E8-F14D-4C66-9798-7FA9BFD92EEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8216B9E8-F14D-4C66-9798-7FA9BFD92EEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8216B9E8-F14D-4C66-9798-7FA9BFD92EEF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

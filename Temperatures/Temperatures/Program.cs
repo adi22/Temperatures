@@ -11,15 +11,15 @@ var temperaturesInFile = new TemperaturesInFile("Warsaw");
 temperaturesInFile.TemperatureAdded += TemperatureAdded;
 
 
-Console.WriteLine("=======================================================================");
+Console.WriteLine("=============================================================================");
 Console.WriteLine("Hello in application to calculating statistics of entered temperatures.");
 Console.WriteLine("Add temperatures in Celsius degrees");
-Console.WriteLine("=======================================================================");
+Console.WriteLine("=============================================================================");
 Console.WriteLine("Select the option from the menu below:");
 Console.WriteLine("Enter '1' to add temperatures and calculate statistics without saving to file");
 Console.WriteLine("Enter '2' to add temperatures and calculate statistics from file");
-Console.WriteLine("Enter 'q' to quit application or break entering temperatures");
-Console.WriteLine("=======================================================================");
+Console.WriteLine("Enter 'q' to quit application or stop entering temperatures");
+Console.WriteLine("=============================================================================");
 Console.WriteLine();
 
 
@@ -52,7 +52,7 @@ while (true)
                     }
                     catch (Exception e)
                     {
-                        Console.WriteLine(e.Message);
+                        Console.WriteLine($"Exception catched: {e.Message}");
                     }
                 }
                 else
@@ -63,7 +63,7 @@ while (true)
                     }
                     catch (Exception e)
                     {
-                        Console.WriteLine(e.Message);
+                        Console.WriteLine($"Exception catched: {e.Message}");
                     }
                 }
                 
@@ -82,7 +82,7 @@ while (true)
                 case "1":
                     Console.WriteLine($"Min: {statisticsFromMemory.Min}");
                     Console.WriteLine($"Max: {statisticsFromMemory.Max}");
-                    Console.WriteLine($"Average: {statisticsFromMemory.Average}");
+                    Console.WriteLine($"Average: {Math.Round(statisticsFromMemory.Average, 2)}");
                     break;
                 case "2":
                     Console.WriteLine($"Min: {statisticsFromMemory.TemperatureInFahrenheit(statisticsFromMemory.Min)}");
@@ -118,7 +118,7 @@ while (true)
                     }
                     catch (Exception e)
                     {
-                        Console.WriteLine(e.Message);
+                        Console.WriteLine($"Exception catched: {e.Message}");
                     }
                 }
                 else
@@ -129,7 +129,7 @@ while (true)
                     }
                     catch (Exception e)
                     {
-                        Console.WriteLine(e.Message);
+                        Console.WriteLine($"Exception catched: {e.Message}");
                     }
                 }
 
@@ -148,7 +148,7 @@ while (true)
                 case "1":
                     Console.WriteLine($"Min: {statisticsFromFile.Min}");
                     Console.WriteLine($"Max: {statisticsFromFile.Max}");
-                    Console.WriteLine($"Average: {statisticsFromFile.Average}");
+                    Console.WriteLine($"Average: {Math.Round(statisticsFromFile.Average, 2)}");
                     break;
                 case "2":
                     Console.WriteLine($"Min: {statisticsFromFile.TemperatureInFahrenheit(statisticsFromFile.Min)}");

@@ -1,6 +1,4 @@
-﻿using System.Runtime.CompilerServices;
-
-namespace Temperatures
+﻿namespace Temperatures
 {
     public class TemperaturesInFile : TemperaturesBase
     {
