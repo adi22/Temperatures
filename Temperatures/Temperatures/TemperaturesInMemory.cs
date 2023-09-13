@@ -5,6 +5,7 @@
         public override event TemperatureAddedDelegate TemperatureAdded;
 
         private List<float> temperatures = new List<float>();
+
         public TemperaturesInMemory(string measurementsPlace) 
             : base(measurementsPlace)
         {
@@ -36,5 +37,6 @@
             }
             return statistics;
         }
+
     }
 }

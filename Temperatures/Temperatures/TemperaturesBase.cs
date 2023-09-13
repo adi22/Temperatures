@@ -3,11 +3,14 @@
     public abstract class TemperaturesBase : ITemperatures
     {
         public delegate void TemperatureAddedDelegate(object sender, EventArgs args);
+
         public abstract event TemperatureAddedDelegate TemperatureAdded;
+
         public TemperaturesBase(string measurementsPlace)
         {
             this.MeasurementsPlace = measurementsPlace;
         }
+
         public string MeasurementsPlace { get; private set; }
         
         public abstract void AddTemperature(float temperature);
@@ -76,6 +79,6 @@
         }
 
         public abstract Statistics GetStatistics();
-        
+
     }
 }

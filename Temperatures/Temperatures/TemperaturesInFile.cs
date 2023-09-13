@@ -5,6 +5,7 @@
         public override event TemperatureAddedDelegate TemperatureAdded;
 
         private const string fileName = "temperatures.txt";
+
         public TemperaturesInFile(string measurementsPlace) 
             : base(measurementsPlace)
         {
@@ -57,5 +58,6 @@
             }
             return statistics;
         }
+
     }
 }
